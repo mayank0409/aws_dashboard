@@ -48,7 +48,7 @@ export default class CreateTableFromJSON extends React.Component {
       var divContainer = document.getElementById("showData");
       divContainer.innerHTML = "";
       divContainer.appendChild(table);
-    }, 1000);
+    }, 1);
   }
 
   render() {

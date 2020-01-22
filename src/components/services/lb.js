@@ -8,7 +8,7 @@ export default class ec2 extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:3001/lb")
+    fetch(`${process.env.REACT_APP_API_URL}/lb`)
       .then(response => response.json())
       .then(data => this.setState({ data: data }));
   }

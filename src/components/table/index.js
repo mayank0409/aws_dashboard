@@ -39,7 +39,10 @@ export default class CreateTableFromJSON extends React.Component {
 
       for (var j = 0; j < col.length; j++) {
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = this.props.data[i][col[j]];
+        tabCell.innerHTML =
+          this.props.data[i][col[j]].length !== 0
+            ? this.props.data[i][col[j]]
+            : "------";
       }
     }
 

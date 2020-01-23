@@ -81,13 +81,20 @@ table {
 }
 th,
 td {
-  border: solid 1px #ddd;
+  border: solid 2px #ddd;
   border-collapse: collapse;
-  padding: 2px 3px;
+  padding: 10px;
   text-align: center;
 }
 th {
   font-weight: bold;
+  background: #dcdcdc;
+}
+tr:hover {
+  background: #f5f5f5;
+}
+button {
+  outline: none;
 }
 
 .service-header {
